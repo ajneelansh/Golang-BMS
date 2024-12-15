@@ -6,7 +6,7 @@ import(
 
 )
 
-var RsgisterBookRoutes = func(router *mux.Router){
+var RegisterBookRoutes = func(router *mux.Router){
 	router.HandleFunc("/book/",controllers.CreateBooks()).Methods("POST")
 	router.HandleFunc("/book/",controllers.GetBooks()).Methods("GET")
 	router.HandleFunc("/book/{bookId}",controllers.GetBooksById()).Methods("GET")
